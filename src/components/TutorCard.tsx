@@ -1,13 +1,14 @@
-import React from 'react'
+import { TutorTProp } from '@/modules/types'
+import { useNavigate } from 'react-router-dom'
 
-import { TutorT } from '../store/features/tutorsSlice'
-
-export type TutorTProp = {
-	tutor: TutorT
-}
-const TutorCard = ({ tutor }: TutorTProp) => {
+const TutorCard = ({ tutor, location }: TutorTProp) => {
+	const navigate = useNavigate()
 	return (
-		<div className='flex gap-1 p-5 my-2 border rounded-md w-full justify-between shadow-inner hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer'>
+		<div
+			onClick={() => navigate(`/tutor/${tutor.id}`)}
+			className='flex gap-1 p-5 my-2 border rounded-md w-full justify-between items-center shadow-inner hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer'
+			style={{ flexDirection: location ? 'column' : 'row' }}
+		>
 			<div className='flex gap-1 flex-1 font-bold'>
 				<p>{tutor.name}</p>
 				<p>{tutor.surname}</p>
