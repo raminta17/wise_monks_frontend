@@ -5,7 +5,7 @@
 
 **Stack used:**
 
-1.Frontend
+1. Frontend
 - React (Vite)
 - Typescript
 - React Redux 
@@ -15,9 +15,9 @@
 - Axios
   
 2. Backend
-  - Node.js
-  - ExpressJs
-  - MySQL
+- Node.js
+- ExpressJs
+- MySQL
 
 ![image](https://github.com/raminta17/wise_monks_frontend/assets/62699647/b0627cbf-1572-4497-bd37-086e22ef60f9)
 
