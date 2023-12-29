@@ -4,7 +4,6 @@ import { useAppSelector } from '@/store/store'
 import axios from 'axios'
 import { ArrowLeft } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import 'react-day-picker/dist/style.css'
 import { useNavigate, useParams } from 'react-router-dom'
 export default function SingleTutorPage() {
 	const navigate = useNavigate()
